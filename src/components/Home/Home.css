@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/BD7A0152.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(37, 36, 50, 0.5);
+    z-index: 1;
+    height: 100vh;
+}
+
+.container-info-home {
+    width: 90%;
+    max-width: 1000px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-info-home h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.container-info-home span {
+    color: #FFA500;
+    font-weight: bold;
+}
+
+.container-info-home p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto 25px auto;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #128081;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #FFA500;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #008080;
+    color: white;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 20px 0;
+}
+
+.dots span {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dots span.active {
+    background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-info-home h1 {
+        font-size: 1.75rem;
+    }
+
+    .container-info-home p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .dots span {
+        width: 25px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-info-home h1 {
+        font-size: 1.5rem;
+    }
+
+    .container-info-home p {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .dots span {
+        width: 20px;
+        height: 3px;
+    }
+}

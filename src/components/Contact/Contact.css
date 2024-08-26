@@ -1,0 +1,42 @@
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F8F7;
+    height: auto;
+    padding: 0px 80px 20px;
+    margin: 50px auto 0 auto;
+}
+
+.para-contact {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #292E3D;
+    text-align: justify;
+    position: relative;
+    bottom: 20px;
+}
+
+@media (max-width: 780px) {
+   .para-contact{
+    text-align: center;
+}
+
+}
+@media (max-width: 481px) {
+    .container-contact .mantine-Group-root {
+        flex-direction: column;
+    }
+
+    .container-contact .mantine-TextInput-root,
+    .container-contact .mantine-Textarea-root {
+        width: 100% !important;
+        margin-bottom: 10px; /* Ajoutez un espace entre les champs si nécessaire */
+    }
+
+    .container-contact .mantine-Button-root {
+        width: 100% !important;
+    }
+
+}

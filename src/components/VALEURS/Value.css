@@ -1,0 +1,70 @@
+.container-value {
+    /* height: auto;  */
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    padding: 20px;
+    /* margin-top: 70px; */
+    margin: 20px auto 0 auto;
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: flex-start; 
+    /* border: 1px solid; */
+    width: 85%;
+
+    /* height: 400px; */
+}
+
+
+@media (max-width: 400px) {
+    .container-value {
+        flex-direction: column; 
+    }
+}
+
+@media (min-width: 1025px) {
+    .container-value {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+}
+
+.content-cardvalue {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border: 1.02px solid #E0E3EB;
+    border-radius: 2.93px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    width: 300px; /* Largeur fixe pour les cartes */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+    height: 200px;
+}
+
+.content-cardvalue:hover {
+    transform: scale(1.05);
+}
+
+.value-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #393939;
+}
+
+.value-para {
+    color: #858EAD;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+.title {
+    font-size: 27px;
+    color: #393939;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
